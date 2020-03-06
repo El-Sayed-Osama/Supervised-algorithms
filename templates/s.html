@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Machine Algorithms</title>
+	<style>
+		body{
+			margin-top :10px;
+			background-color:lightgray;
+			font-weight:Bold;
+			font-size:200%;
+			color:darkgreen;
+			}
+		input{
+			font-weight:Bold;
+			font-size:100%;
+			color:darkblue;
+			margin-left:30px;
+			margin-bottom:50px;
+			}
+		p{
+			margin-left:8%;
+		}
+	</style>
+</head>
+<body>
+<center>
+	<h3>Click any button below to choose algorithm to calculate result</h3>
+	<form action="/form" method="POST">
+		<input type="submit" value="Support Vector Machine" name="svc"><input type="submit" value="Neural Network" name="nn"><input type="submit" value="Naive Base" name="nb"><input type="submit" value="Decision Tree" name="dt">
+		<input type="submit" value="Represent Data" name="showdata">
+	</form></center>
+<br><p>
+Result of Support Vector Machine = {{x}}
+<br>	
+Result of Neural Network = {{y}}
+<br>
+Result of Naive Base = {{z}}
+<br>
+Result of Decision Tree = {{c}}
+</p>	
+</body>
+</html>

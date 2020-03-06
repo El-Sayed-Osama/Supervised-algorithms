@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dataset Data</title>
+	<link rel="stylesheet" media="screen" href="static/bootstrap.min.css">
+	<style>
+		body{
+			margin-top :10px;
+			background-color:lightgray;
+			font-weight:Bold;
+			font-size:200%;
+			color:darkgreen;
+			}
+	</style>
+</head>
+<body>
+<div class="row container" style="margin-left:25% ;">
+	<table border="1" style="text-align: center;">
+		<th>Name</th>
+		{% for i in z %}
+		<tr>
+			<td>
+				{{i}}
+			</td>
+		{% endfor %}
+	</table>
+	<table border="1" style="text-align: center;">
+		<th>Generation</th>
+		{% for i in w %}
+		<tr>
+			<td>
+				{{i}}
+			</td>
+		{% endfor %}
+	</table>
+	<table border="1" style="text-align: center;">
+		<th>Abilities</th>
+		{% for i in x %}
+		<tr>
+			<td>
+				{{i}}
+			</td>
+		{% endfor %}
+	</table>
+	<table border="1" style="text-align: center;">
+		<th>Classfication</th>
+		{% for i in y %}
+		<tr>
+			<td>
+				{{i}}
+			</td>
+		{% endfor %}
+	</table>
+</div>
+</body>
+</html>
